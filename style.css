@@ -1,0 +1,109 @@
+/* variables start */
+:root {
+/* text colors */
+--red: #ff5757;
+--yellow: #ffb01f;
+--green: #00bd91;
+--blue: #1125d4;
+/* background colors */
+--bg-stale-blue: #7857ff;
+--bg-royal-blue: #2e2be9;
+/* circle colors */
+--cir-violate-blue: #4e21ca;
+--cir-persian-blue: #2421ca00;
+/* neutral colors */
+--nue-white: #ffffff; /* summary background*/
+--nue-blue: #ebf1ff; /* body background*/
+--nue-lavender: #c8c7ff; /* shadow */
+--nue-gray: #303b5a; /* for text */
+/* font sizes */
+--txt-size: 18px;
+}
+/* variables end */
+
+body {
+    margin: 0;
+    background-color: var(--nue-blue);
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--nue-white);
+    display: flex;
+    width: 700px;
+    border-radius: 30px;
+}
+
+.result,
+.summary {
+    flex-basis: 50%;
+}
+
+.result {
+    background-image: linear-gradient(135deg, var(--bg-stale-blue), var(--bg-royal-blue));
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+
+.result > p {
+    color: var(--nue-lavender);
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 700;
+}
+
+.result .circle {
+    background-image: linear-gradient(180deg,  var(--cir-violate-blue), var(--cir-persian-blue));
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 40px;
+    color: white;
+    position: relative;
+}
+
+.result .circle span:first-child {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.result .circle span:last-child {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+    font-size: var(--txt-size);
+    color: #8d82ff;
+    font-weight: 700;
+}
+
+.result .footer p:first-child {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.result .footer p:last-child {
+    color: var(--nue-lavender);
+    max-width: 250px;
+    font-size: var(--txt-size);
+    color: var(--nue-lavender);
+    font-weight: 700;
+    margin: 0 auto 50px;
+}
+
+.summary {
+
+}
