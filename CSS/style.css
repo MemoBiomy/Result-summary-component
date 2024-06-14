@@ -203,3 +203,16 @@ body {
 .summary button:hover {
     background-image: linear-gradient(180deg, var(--bg-royal-blue), var(--cir-violate-blue));
 }
+
+@media (max-width: 767px) {
+    .body {
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .result {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
