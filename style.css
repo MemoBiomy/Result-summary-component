@@ -159,6 +159,15 @@ body {
     background-color: rgb(17, 37, 212, .1);
 }
 
+.summary .label {
+    display: flex;
+    align-items: center;
+}
+
+.summary .label i {
+    margin-right: 5px;
+}
+
 .summary li p {
     margin: 0;
 }
