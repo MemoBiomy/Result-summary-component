@@ -21,6 +21,10 @@
 }
 /* variables end */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: var(--nue-blue);
@@ -53,9 +57,9 @@ body {
 
 .result > p {
     color: var(--nue-lavender);
-    font-size: 20px;
+    font-size: 25px;
     margin: 30px 0;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .result .circle {
@@ -96,14 +100,26 @@ body {
 }
 
 .result .footer p:last-child {
-    color: var(--nue-lavender);
     max-width: 250px;
     font-size: var(--txt-size);
     color: var(--nue-lavender);
-    font-weight: 700;
     margin: 0 auto 50px;
+    line-height: 1.3;
+    text-transform: lowercase;
+}
+
+.result .footer p:last-child::first-letter {
+    text-transform: uppercase;
 }
 
 .summary {
+    padding: 30px;
+    text-transform: capitalize;
+}
 
+.summary > p {
+    margin: 0 0 30px;
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--nue-gray);
 }
